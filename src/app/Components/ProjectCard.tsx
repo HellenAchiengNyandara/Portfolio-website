@@ -16,15 +16,15 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110 hover:bg-grey-500 duration-300 rounded-md border border-neutral-800 bg-black-900/50 p-8 text-center shadow" id="projects">
+    <div className="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110 hover:bg-grey-500 duration-300 rounded-md border border-neutral-800 bg-black-900/50 p-8 text-center" id="projects">
       <div className="header flex justify-between mb-4">
-        <div className='flex gap-3 items-center '>
+        <div className='flex gap-3 items-center'>
           <Link href={project.githubLink} target='_blank'>
             <Image src={github2} alt="GitHub" width={50} height={50} />
           </Link>
           <Link href={project.liveLink} target='_blank'>
-            <Image src={externalicon} alt="Live" width={50} height={50} />
-          </Link>
+         <Image src={externalicon} alt="Live" width={50} height={50} />
+        </Link>
         </div>
       </div>
       <h1 className='flex gap-3 items-center'>
