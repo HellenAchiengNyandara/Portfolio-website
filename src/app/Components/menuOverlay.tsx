@@ -5,7 +5,7 @@ interface MenuOverlayProps {
   links: { path: string; title: string }[];
 }
 
-const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
+ export const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
@@ -17,4 +17,3 @@ const MenuOverlay: React.FC<MenuOverlayProps> = ({ links }) => {
   );
 };
 
-export default MenuOverlay;
