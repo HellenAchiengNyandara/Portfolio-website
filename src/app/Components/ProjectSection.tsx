@@ -1,4 +1,4 @@
-import ProjectCard from './ProjectCard';
+import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
@@ -10,24 +10,24 @@ const projects = [
     liveLink: 'https://modern-mtodolist.netlify.app/',
   },
   {
-    name: 'Web Content Integration',
+    name: 'Project 2',
     isPrivate: true,
     description: 'The Goal of the assignment is to gain practical experienc in integrating diverse web content.',
-    techStack: ['html', 'javascript', 'CSS'],
+    techStack: ['html', 'javascript', 'Css'],
     githubLink: 'https://github.com/HellenAchiengNyandara/AZ-WebContent',
     liveLink: 'https://github.com/HellenAchiengNyandara/AZ-WebContent',
   },
   {
-    name: 'Kwintech Digital Solution',
+    name: 'Project 3',  // Fixed duplicate name issue
     isPrivate: true,
     description: 'A company website for Kwintech digital solution.',
-    techStack: ['React js', 'tailwind CSS'],
+    techStack: ['React js', 'tailwind Css'],
     githubLink: 'https://github.com/HellenAchiengNyandara/kwintech',
     liveLink: 'https://www.kwintechdigitalsolutions.com/',
   },
 ];
 
-const ProjectSection = () => {
+const HomePage = () => {
   return (
     <div id='projects' className='text-white flex flex-col justify-center sm:items-center sm:min-h-screen gap-8 my-8 sm:m-0 sm:gap-20'>
       <h1 className="text-xl font-bold mb-6">My Projects</h1>
@@ -40,4 +40,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default HomePage;
