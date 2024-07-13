@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-const Footer = () => {
+export const Footer = () => {
   const currentYear = new Date().getFullYear(); 
 
   return (
@@ -11,4 +11,4 @@ const Footer = () => {
   )
 }
 
-export default Footer;
+

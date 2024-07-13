@@ -1,10 +1,11 @@
 import Image from "next/image";
-import HeroSection from "./Components/HeroSection";
-import Navbar from "./Components/Navbar";
-import AboutSection from "./Components/AboutSection";
-import ProjectSection from "./Components/ProjectSection";
-import ContactMe from "./Components/Contactme";
-import Footer from "./Components/Footer";
+import {HeroSection}from "./Components/HeroSection";
+
+import {AboutSection} from "./Components/AboutSection";
+import {HomePage} from "./Components/ProjectSection";
+import {ContactMe} from "./Components/Contactme";
+import {Footer} from "./Components/Footer";
+import { Navbar } from "./Components/Navbar";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
         <AboutSection />
-        <ProjectSection />
+        <HomePage />
         <ContactMe/>
       </div>
       <Footer/>

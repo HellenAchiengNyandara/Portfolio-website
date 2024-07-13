@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
-const ContactMe = () => {
+export const ContactMe = () => {
   const [formData, setFormData] = useState({
     email: "",
     message: ""
@@ -53,4 +53,3 @@ const ContactMe = () => {
   );
 };
 
-export default ContactMe;

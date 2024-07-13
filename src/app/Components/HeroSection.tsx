@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
-const HeroSection = () => {
+export const HeroSection = () => {
   return (
     <section className="lg:py-16 flex flex-auto ">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -50,4 +50,3 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;

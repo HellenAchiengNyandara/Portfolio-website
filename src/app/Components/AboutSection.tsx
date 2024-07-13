@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image'; // Import Image from 'next/image'
 
-const AboutSection = () => {
+export const AboutSection = () => {
   return (
     <section className=" bg-black text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -20,5 +20,3 @@ const AboutSection = () => {
     </section>
   );
 };
-
-export default AboutSection;

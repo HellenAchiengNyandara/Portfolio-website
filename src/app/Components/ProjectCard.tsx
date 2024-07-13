@@ -14,7 +14,7 @@ interface ProjectCardProps {
   };
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110 hover:bg-grey-500 duration-300 rounded-md border border-neutral-800 bg-black-900/50 p-8 text-center" id="projects">
       <div className="header flex justify-between mb-4">
@@ -51,4 +51,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   );
 };
 
-export default ProjectCard;

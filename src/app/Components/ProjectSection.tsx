@@ -1,4 +1,4 @@
-import ProjectCard from "./ProjectCard";
+import {ProjectCard }from "./ProjectCard";
 
 const projects = [
   {
@@ -27,7 +27,7 @@ const projects = [
   },
 ];
 
-const HomePage = () => {
+export const HomePage = () => {
   return (
     <div id='projects' className='text-white flex flex-col justify-center sm:items-center sm:min-h-screen gap-8 my-8 sm:m-0 sm:gap-20'>
       <h1 className="text-xl font-bold mb-6">My Projects</h1>
@@ -40,4 +40,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+
