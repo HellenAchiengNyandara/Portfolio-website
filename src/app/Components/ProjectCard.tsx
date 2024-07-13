@@ -3,24 +3,22 @@ import Link from 'next/link';
 import github2 from '../../../public/images/github2.png';
 import externalicon from '../../../public/images/externalicon.png';
 
-interface Project {
-  name: string;
-  isPrivate: boolean;
-  description: string;
-  techStack: string[];
-  githubLink: string;
-  liveLink: string;
-}
-
 interface ProjectCardProps {
-  project: Project;
+  project: {
+    name: string;
+    isPrivate: boolean;
+    description: string;
+    techStack: string[];
+    githubLink: string;
+    liveLink: string;
+  };
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="shadow-[0_10px_20px_rgba(240,_46,_170,_0.7)] transition ease-in-out delay-1 hover:-translate-y-1 hover:scale-110 hover:bg-grey-500 duration-300 rounded-md border border-neutral-800 bg-black-900/50 p-8 text-center shadow" id="projects">
       <div className="header flex justify-between mb-4">
-        <div className='flex gap-3 items-center'>
+        <div className='flex gap-3 items-center '>
           <Link href={project.githubLink} target='_blank'>
             <Image src={github2} alt="GitHub" width={50} height={50} />
           </Link>
