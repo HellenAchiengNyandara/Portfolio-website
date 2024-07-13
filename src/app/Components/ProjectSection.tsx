@@ -2,7 +2,7 @@
 import ProjectCard from '../components/ProjectCard';
 const projects = [
   {
-    name: 'Project 1',
+    name: 'To-do List',
     isPrivate: false,
     description: 'Modern To do list,Can also be ,modified to a shopping List #Its a javascript refresher for Crud operations...Thanks for watching.',
     techStack: ['javascript','CSS'],
@@ -29,9 +29,9 @@ const projects = [
 ];
 const HomePage = () => {
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-6">My Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div id='projects' className=' text-white flex flex-col justify-center sm:items-center sm:min-h-screen gap-8  my-8 sm:m-0 sm:gap-20'>
+      <h1 className="text-xl font-bold mb-6">My Projects</h1>
+      <div className='grid grid-cols-1 sm:grid-cols-3 gap-8'>
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}

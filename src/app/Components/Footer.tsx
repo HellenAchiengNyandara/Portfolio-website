@@ -1,14 +1,14 @@
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear(); 
+
   return (
-    <footer className="footer border z-10 border-t-[#0c0c0c] border-l-transparent border-r-transparent text-white">
-      <div className="container p-12 flex justify-between">
-        <span>4Codes</span>
-        <p className="text-slate-600">All rights reserved.</p>
-      </div>
-    </footer>
-  );
-};
+    <div className='text-center text-white p-4 border-t border-[#050505] bg-color black'>
+      <p>@{currentYear}. Made with ❤️ by <Link href="https://www.linkedin.com/in/mwongess/">Hellena Achieng.</Link></p>
+    </div>
+  )
+}
 
 export default Footer;
