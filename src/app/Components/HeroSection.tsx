@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div className="col-span-7 text-center sm:text-left">
           <h1 className="text-white mb-2 text-2xl sm:text-5xl lg:text-6xl font">
-            Hello, I'm <br />
+            Hello, I&apos;m <br />
             <TypeAnimation
               sequence={[
                 'Hellen',
